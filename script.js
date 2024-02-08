@@ -47,15 +47,15 @@ require([
         nextBasemap: "hybrid"
     });
 
-    view.ui.add(basemapToggle, "bottom-right"); // Add the BasemapToggle widget to the bottom-right corner
+    view.ui.add(basemapToggle, "bottom-left"); 
 
-    // Add a Search widget
+   
     var searchWidget = new Search({
         view: view
     });
 
     view.ui.add(searchWidget, {
-        position: "top-right" // Add the Search widget to the top-right corner
+        position: "top-right" 
     });
 
     // Add a Home button
@@ -63,5 +63,5 @@ require([
         view: view
     });
 
-    view.ui.add(homeButton, "top-left"); // Add the Home button to the top-left corner
+    view.ui.add(homeButton, "top-left"); 
 });
